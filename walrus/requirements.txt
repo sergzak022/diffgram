@@ -36,7 +36,7 @@ newrelic
 nltk
 markupsafe==2.1.2
 gdal-utils
-GDAL==3.4.1
+GDAL==3.6.4
 pika
 azure-ai-textanalytics
 python-keycloak

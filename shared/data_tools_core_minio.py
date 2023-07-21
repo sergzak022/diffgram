@@ -45,6 +45,14 @@ class DataToolsMinio(DataToolsS3):
         if settings.IS_DIFFGRAM_S3_V4_SIGNATURE:
             config=Config(signature_version='s3v4')
 
+        print('*******************************')
+        print('settings.DIFFGRAM_MINIO_ENDPOINT_URL', settings.DIFFGRAM_MINIO_ENDPOINT_URL)
+        print('settings.DIFFGRAM_MINIO_ACCESS_KEY_ID', settings.DIFFGRAM_MINIO_ACCESS_KEY_ID)
+        print('settings.DIFFGRAM_MINIO_ACCESS_KEY_SECRET', settings.DIFFGRAM_MINIO_ACCESS_KEY_SECRET)
+        print('settings.DIFFGRAM_S3_BUCKET_REGION', settings.DIFFGRAM_S3_BUCKET_REGION)
+        print('settings.DIFFGRAM_MINIO_DISABLED_SSL_VERIFY', settings.DIFFGRAM_MINIO_DISABLED_SSL_VERIFY)
+        print('*******************************')
+
         self.s3_client = DataToolsMinio.get_client(
             endpoint_url = settings.DIFFGRAM_MINIO_ENDPOINT_URL,
             access_key_id = settings.DIFFGRAM_MINIO_ACCESS_KEY_ID,

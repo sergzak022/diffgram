@@ -40,8 +40,10 @@ def route_same_host(path):
     # https://stackoverflow.com/questions/6656363/proxying-to-another-web-service-with-flask
     if path.startswith('minio'):
         dict_value = dict(parse.parse_qsl(parse.urlsplit(request.url).query))
-        str_path = f"http://minio:9000{path_with_params.replace('minio', '').split('?')[0]}"
+        str_path = f"http://127.0.0.1:9000{path_with_params.replace('minio', '').split('?')[0]}"
         str_path = urllib.parse.unquote(str_path)
+
+        print('foo', str_path)
 
         resp = requests.get(str_path, params = dict_value)
         excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
@@ -113,7 +115,7 @@ def route_multi_host(path):
     # JS local dev server
     if path[:3] != "api":
         host_reached = 'frontend'
-        host = 'http://frontend:80/'
+        host = 'http://frontend:8081/'
         resp = requests.request(
             method = request.method,
             url = host + path_with_params,

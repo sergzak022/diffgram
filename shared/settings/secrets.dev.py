@@ -27,11 +27,11 @@ os.environ['WALRUS_SERVICE_URL_BASE'] = "http://127.0.0.1:8085/"
 # os.environ['DIFFGRAM_AWS_ACCESS_KEY_SECRET'] = 'secret'
 os.environ['IS_DIFFGRAM_S3_V4_SIGNATURE'] = 'False'
 os.environ['DIFFGRAM_S3_BUCKET_NAME'] = 'diffgram-storage'
-os.environ['DIFFGRAM_S3_BUCKET_REGION'] = 'us-east-1'
+os.environ['DIFFGRAM_S3_BUCKET_REGION'] = 'None'
 os.environ['DIFFGRAM_MINIO_ENDPOINT_URL'] = 'http://localhost:9000'
-os.environ['DIFFGRAM_MINIO_ACCESS_KEY_ID'] = 'mykeyi11vgy6rps3gimz18hd1'
-os.environ['DIFFGRAM_MINIO_ACCESS_KEY_SECRET'] = 'mysecretvavkmgcooefsy0ff5aujj6965d4pvnrtrw0z23nr'
-os.environ['DIFFGRAM_MINIO_DISABLED_SSL_VERIFY'] = 'True'
+os.environ['DIFFGRAM_MINIO_ACCESS_KEY_ID'] = 'p3bksvz2bq9t76yn1aug'
+os.environ['DIFFGRAM_MINIO_ACCESS_KEY_SECRET'] = 'mzu583t8k8pogf5kg0fonjytaqmczpbckc1gicef'
+#os.environ['DIFFGRAM_MINIO_DISABLED_SSL_VERIFY'] = 'True'
 os.environ['ML__DIFFGRAM_S3_BUCKET_NAME'] = 'diffgram-storage'
 
 
